@@ -1,7 +1,9 @@
 class Api::OrdersController < ApplicationController
+    before_action :authenticate_admin, except: [:index, :show]
+
   def index
-    @orders = Order.all
-    render 'index.json.jbuilder'
+      @orders = current_user.orders
+      render 'index.json.jbuilder'
   end
 
   def create
@@ -9,6 +11,7 @@ class Api::OrdersController < ApplicationController
     calculated_subtotal = params[:quantity].to_i * product.price
     calculated_tax = calculated_subtotal * 0.09
     calculated_total = calculated_tax + calculated_subtotal
+
 
     @order = Order.new(
                        user_id: current_user.id,
