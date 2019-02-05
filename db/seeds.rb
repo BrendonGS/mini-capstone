@@ -28,6 +28,20 @@
 #   {name: "Mike", email: "mike@gmail.com", password_digest: "$2a$10$XbGfYYPquIpa8RNdY6b62Oh4r./hRhf2ez5OpNaTlO68m7k/diRdC", admin: true}
 # ])
 
-Category.create(name: "Expensive")
+# Category.create(name: "Expensive")
+# Category.create(name: "Weapon")
+# Category.create(name: "Instrument")
+# Category.create(name: "Phone")
 
-ProductCategory.create(product_id: 2, catergoy_id: 1)
+
+
+# ProductCategory.create(product_id: 1, category_id: 1)
+# ProductCategory.create(product_id: 2, category_id: 2)
+# ProductCategory.create(product_id: 1, category_id: 3)
+# ProductCategory.create(product_id: 2, category_id: 1)
+# ProductCategory.create(product_id: 3, category_id: 1)
+# ProductCategory.create(product_id: 3, category_id: 4)
+
+
+
+
