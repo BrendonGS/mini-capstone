@@ -1,16 +1,47 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Image.create!([
+#   {url: "https://static1.squarespace.com/static/55d7cc3ae4b039657c2b8564/t/57c478ebbe6594a834526e3e/1458790049387/Poster_2_300dpi_03-29-15P.jpg?format=2500w", product_id: 1},
+#   {url: "https://www.thefirearmblog.com/blog/wp-content/uploads/2016/06/ULC-PRO2-660x440.jpg", product_id: 2},
+#   {url: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6021/6021700cv11d.jpg", product_id: 3}
+# ])
+# Order.create!([
+#   {user_id: 2, product_id: 2, quantity: 2, subtotal: "6400.0", tax: "576.0", total: "6976.0"},
+#   {user_id: 2, product_id: 2, quantity: 2, subtotal: "6400.0", tax: "576.0", total: "6976.0"},
+#   {user_id: 2, product_id: 2, quantity: 2, subtotal: "6400.0", tax: "576.0", total: "6976.0"},
+#   {user_id: 2, product_id: 2, quantity: 2, subtotal: "6400.0", tax: "576.0", total: "6976.0"},
+#   {user_id: 2, product_id: 2, quantity: 2, subtotal: "6400.0", tax: "576.0", total: "6976.0"},
+#   {user_id: 2, product_id: 3, quantity: 2, subtotal: "1800.0", tax: "162.0", total: "1962.0"}
+# ])
+# Product.create!([
+#   {name: "Anderson Guitar", price: "2500.0", description: "Guitar of the Gods", in_stock: true, supplier_id: 2},
+#   {name: "1911", price: "3200.0", description: "Wilson Combat Gold", in_stock: true, supplier_id: 2},
+#   {name: "Galaxy Note 8", price: "900.0", description: "The only phone I respect", in_stock: true, supplier_id: 3},
+#   {name: "rubber Axe", price: "42.0", description: "all work and no play makes jack go crazy", in_stock: true, supplier_id: 3}
+# ])
+# Supplier.create!([
+#   {name: "Chuck's", email: "chucks@gmail.com", phone_number: "312-560-0676"},
+#   {name: "Rusty Shacklefert", email: "notrustyshacklefert@gmail.com", phone_number: "773-555-5151"},
+#   {name: "Susie Crabgrass", email: "hotgrass@hotmail.com", phone_number: "630-555-1212"}
+# ])
+# User.create!([
+#   {name: "Jet", email: "jetmag@gmail.com", password_digest: "$2a$10$bzHDOt8JOHzaPp5Bx38oreNg.juWwTzfHhLT6Py8ytMsCZCf2CWni", admin: false},
+#   {name: "Jack Snake", email: "jackthesnake@gmail.com", password_digest: "$2a$10$Ica37kCHYnV.3tLeALauDuZwuFAFihRZv7jKITxLsxL4d2nWDGIb6", admin: false},
+#   {name: "Mike", email: "mike@gmail.com", password_digest: "$2a$10$XbGfYYPquIpa8RNdY6b62Oh4r./hRhf2ez5OpNaTlO68m7k/diRdC", admin: true}
+# ])
+
+# Category.create(name: "Expensive")
+# Category.create(name: "Weapon")
+# Category.create(name: "Instrument")
+# Category.create(name: "Phone")
 
 
-product = Product.new
-  # The same style of thing you wrote in the terminal when working of the controller(product) exercise
-  # Write the your code in here
-  # You can use this to make changes here more easily and quickly 
-product.save
 
-# within what ever project your working on ex(micro_app/) type "rake db:seed" to run the program
+# ProductCategory.create(product_id: 1, category_id: 1)
+# ProductCategory.create(product_id: 2, category_id: 2)
+# ProductCategory.create(product_id: 1, category_id: 3)
+# ProductCategory.create(product_id: 2, category_id: 1)
+# ProductCategory.create(product_id: 3, category_id: 1)
+# ProductCategory.create(product_id: 3, category_id: 4)
+
+
+
+
